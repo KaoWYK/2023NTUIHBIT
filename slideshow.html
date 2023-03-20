@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta http-equiv="Refresh" content="60">
+
+    <link rel="stylesheet" href="./css/mhslideshow.css" type="text/css">
+
+
+
+</head>
+
+<body>
+
+
+
+<!-- 線上調整圖片大小可上這個網站: http://blog.xuite.net/vexed/tech/65591105-%E7%B7%9A%E4%B8%8A%E8%AA%BF%E6%95%B4%E5%9C%96%E7%89%87%E5%A4%A7%E5%B0%8F, width:550, height:410, -->
+<!-- 照片編號 1-6 不能移動, 其他照片皆可以備份後取代掉 -->
+
+
+    <script>
+    // ref:http://stackoverflow.com/questions/2380019/generate-8-unique-random-numbers-between-1-and-100
+    var arr = []
+    while (arr.length < 10) {
+        var randomnumber = Math.ceil(Math.random() * 43)  // 看照片目前總共上傳N張, 就要改成N張 Math.random() * N 
+        var found = false;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == randomnumber) {
+                found = true;
+                break
+            }
+        }
+        if (!found) arr[arr.length] = randomnumber;
+    }
+
+    //generate html with javascript
+    html = ''
+    for (i = 0; i < 9; i++) {
+        html = html + '<img src="./img/slides/' + arr[i] + '.jpg">'
+    }
+    html = '<div id="mhslideshow">' + html + '</div>'
+    document.writeln(html)
+    </script>
+
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/mhslideshow.js"></script>
+    <script type="text/javascript" src="./js/initslide.js"></script>
+
+</body>
+
+</html>
