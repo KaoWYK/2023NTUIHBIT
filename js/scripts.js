@@ -52,3 +52,22 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+var curLang = 'zh'
+window.onload = function init() {
+    var enElements = document.querySelectorAll('[lang="en"]');
+    for (var i = 0; i < enElements.length; i++) {
+        enElements[i].style.display = 'none';
+    }
+};
+function toggleLanguage() {
+    var langElements = document.querySelectorAll('[lang]');
+    for (var i = 0; i < langElements.length; i++) {
+        if (langElements[i].lang === curLang) {
+            langElements[i].style.display = 'none';
+        } else {
+            langElements[i].style.display = '';
+        }
+    }
+    curLang = (curLang == 'zh') ? 'en' : 'zh'
+};
