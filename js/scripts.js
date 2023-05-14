@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-var curLang = 'zh'
+var curLang = "zh"
 window.onload = function init() {
     var enElements = document.querySelectorAll('[lang="en"]');
     for (var i = 0; i < enElements.length; i++) {
