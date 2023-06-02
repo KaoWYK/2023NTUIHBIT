@@ -30,7 +30,9 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1">
                             <button class="btn btn-secondary py-3 px-0 px-lg-3 rounded" type="button" onclick="toggleLanguage()">
-                                <font><b>中/Eng</b></font>
+                                <!-- <font><b>中/Eng</b></font> -->
+                                <div lang="zh"><b>中 / <font style="opacity:30%">Eng</font></b></div>
+                                <div lang="en"><b><font style="opacity:30%">中</font> / Eng</b></div>
                             </button>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">關於我們<br>About Us</a></li>
@@ -135,14 +137,6 @@
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3" lang="zh">
                         <br>
-                        <p><b> 報名死線 </b></p>
-                        <p> - 參賽意向：2023年3月30日</p>
-                        <p> - 確認隊伍：2023年4月10日</p>
-                        <p> - 提交名單：2023年4月30日</p>
-                        <br>
-                        <p><b> 參賽意向報名連結 </b></p>
-                        <p> - <a target="_blank" href="https://forms.gle/ZBtuWQ7Cyp2d3FR17">連結</a></p>
-                        <br>
                         <p><b> 比賽日期 </b></p>
                         <p> - 學生組：2023年6月21日至25日</p>
                         <p> - 校友組：2023年6月22日17:00至25日</p>
@@ -168,16 +162,17 @@
                         <p> - 比賽場地、觀眾席禁止攜帶食物及飲料進入</p>
                         <p> - 請自備運動防護用品，大會可協助處理防護貼紮</p>
                         <p> - 膳宿請各隊自行安排，如有需要也可與大會聯絡</p>
+                        <br>
+                        <p><b> 報名死線 </b></p>
+                        <p><del> - 參賽意向：2023年3月30日</del></p>
+                        <p><del> - 確認隊伍：2023年4月10日</del></p>
+                        <p><del> - 提交名單：2023年4月30日</del></p>
+                        <br>
+                        <p><b> 參賽意向報名連結 </b></p>
+                        <p><del> - <a target="_blank" href="https://forms.gle/ZBtuWQ7Cyp2d3FR17">連結</a></del></p>
+                        <br>
                     </div>
                     <div class="col-lg-6 offset-lg-3" lang="en">
-                        <br>
-                        <p><b> Registration Deadline </b></p>
-                        <p> - Interest Expression: March 30th, 2023</p>
-                        <p> - Team Confirmation: April 10th, 2023</p>
-                        <p> - Team Roster Submission: April 30th, 2023</p>
-                        <br>
-                        <p><b> Team Roster Submission Form </b></p>
-                        <p> - <a target="_blank" href="https://forms.gle/ZBtuWQ7Cyp2d3FR17">Link</a></p>
                         <br>
                         <p><b> Match Starting Date </b></p>
                         <p> - Students: June 21st to Jun 25th, 2023</p>
@@ -204,6 +199,15 @@
                         <p> - No food and drinks are allowed in the competition area and the auditorium. </p>
                         <p> - Please bring your personal protective gears. The Organizer provides assistance with athletic taping.</p>
                         <p> - Accommodation and meals are to be arranged by each team. Please contact the organizer if needed.</p>
+                        <br>
+                        <p><b> Registration Deadline </b></p>
+                        <p><del> - Interest Expression: March 30th, 2023</del></p>
+                        <p><del> - Team Confirmation: April 10th, 2023</del></p>
+                        <p><del> - Team Roster Submission: April 30th, 2023</del></p>
+                        <br>
+                        <p><b> Team Roster Submission Form </b></p>
+                        <p><del> - <a target="_blank" href="https://forms.gle/ZBtuWQ7Cyp2d3FR17">Link</a></del></p>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -247,9 +251,9 @@
                         賽程時間 Match Schedule (TBD)
                     </a>
                     <br>
-                    <a class="btn btn-xl btn-outline-secondary mb-3" href="assets/pdf/2023參賽隊伍名單_0531.pdf">
+                    <a class="btn btn-xl btn-outline-secondary mb-3" href="assets/pdf/2023參賽隊伍名單_0601.pdf">
                         <i class="fas fa-download me-2"></i>
-                        參賽隊伍  Participants (Last updated 5/31)
+                        參賽隊伍  Participants (Last updated 6/02)
                     </a>
                     <br>
                     <a class="btn btn-xl btn-outline-secondary mb-3" href="">
@@ -358,7 +362,7 @@
                         <p> - 資訊總表：<a target="_blank" href="https://docs.google.com/spreadsheets/d/1HaemPMVZ9dSimbkmVPSa_nMlCHK-2E09cAV6792AKMc/htmlview">連結</a></p>
                         <p> - 籌委會住宿聯絡人：吳宗勳先生</p>
                         <p> - Email：<a target="_blank" href="mailto:b06704057@ntu.edu.tw">b06704057@ntu.edu.tw</a></p>
-                        <br>
+                        <p> - 詳細資訊：<a data-bs-toggle="collapse" href="#AccomCollapse" aria-expanded="false" aria-controls="AccomCollapse">點我展開/收縮</a></p>
                     </div>
                     <div class="col-lg-8 offset-lg-2" lang="en">
                         <br>
@@ -368,370 +372,372 @@
                         <p> - Recommanded Hotel List:<a target="_blank" href="https://docs.google.com/spreadsheets/d/1HaemPMVZ9dSimbkmVPSa_nMlCHK-2E09cAV6792AKMc/htmlview"> Link</a></p>
                         <p> - Accommodation contact person: Mr. Wu Chung-Hsun</p>
                         <p> - Email: <a target="_blank" href="mailto:b06704057@ntu.edu.tw">b06704057@ntu.edu.tw</a></p>
-                        <br>
+                        <p> - More information: <a data-bs-toggle="collapse" href="#AccomCollapse" aria-expanded="false" aria-controls="AccomCollapse">Click to expand/collapse</a></p>
                     </div>
                 </div>
-                <!-- 1 -->
-                <div class="row" lang="zh">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/d78xXk">承攜行旅 台北台大館<br>Guide Hotel Taipei, NTU</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：四人房3296元</p>
-                        <p> - 相關服務：
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市中正區羅斯福路三段98號</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>Sales：徐士喬Joe，聯絡時告知參與台大手球隊，並聯絡此業務即可享優惠專案。</p> -->
-                        <br>
+                <div class="collapse" id="AccomCollapse">
+                    <!-- 1 -->
+                    <div class="row" lang="zh">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/d78xXk">承攜行旅 台北台大館<br>Guide Hotel Taipei, NTU</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：四人房3296元</p>
+                            <p> - 相關服務：
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市中正區羅斯福路三段98號</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>Sales：徐士喬Joe，聯絡時告知參與台大手球隊，並聯絡此業務即可享優惠專案。</p> -->
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">北行旅<br>N hotel</a></b></p>
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：雙人房2000元(6/20-22)，3600元(6/23-25)</p>
+                            <p> - 相關服務：
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市中正區重慶南路一段86號3樓</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>告知是臺大手球隊介紹，來參加臺灣大學國際手球邀請賽。四人房只有六間，雙人房有80間。</p> -->
+                            <br>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">北行旅<br>N hotel</a></b></p>
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：雙人房2000元(6/20-22)，3600元(6/23-25)</p>
-                        <p> - 相關服務：
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市中正區重慶南路一段86號3樓</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>告知是臺大手球隊介紹，來參加臺灣大學國際手球邀請賽。四人房只有六間，雙人房有80間。</p> -->
-                        <br>
+                    <div class="row" lang="en">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/d78xXk">承攜行旅 台北台大館<br>Guide Hotel Taipei, NTU</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 3296</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: No. 98, Section 3, Luosifu Rd, Zhongzheng District, Taipei City, 100</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">北行旅<br>N hotel</a></b></p>
+                            <p> - Discount & Price: Double NTD 2000(6/20-22), NTD 3600(6/23-25)</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, Chongqing S Rd, No. 86, 3F</p>
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <div class="row" lang="en">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/d78xXk">承攜行旅 台北台大館<br>Guide Hotel Taipei, NTU</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 3296</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: No. 98, Section 3, Luosifu Rd, Zhongzheng District, Taipei City, 100</p>
-                        <br>
+                    <!-- 2 -->
+                    <div class="row" lang="zh">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/KMDrOM">敘美精品旅店<br>Taipei Hotel B7</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：雙人房2500元，四人房3500元</p>
+                            <p> - 相關服務：
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市中正區重慶南路一段111號</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>TEL：+886-2-2383-2088，找張主任，並告知是台大手球隊介紹（恰逢端午假期 因此費用稍高）。附近有路易莎，預約最早7:00，可以送到飯店。</p> -->
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">谷墨商旅<br>GoodMore Hotel</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：浮動。由本籌委會訂房可享官網上價錢八折優惠。</p>
+                            <p> - 相關服務：
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市大安區和平東路一段147號</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>請聯絡吳宗勳先生：b06704057@ntu.edu.tw</p> -->
+                            <br>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">北行旅<br>N hotel</a></b></p>
-                        <p> - Discount & Price: Double NTD 2000(6/20-22), NTD 3600(6/23-25)</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, Chongqing S Rd, No. 86, 3F</p>
-                        <br>
+                    <div class="row" lang="en">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/KMDrOM">敘美精品旅店<br>Taipei Hotel B7</a></b></p> 
+                            <p> - Discount & Price: Double NTD 2500, Quad NTD 3500</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: No. 111, Section 1, Chongqing S Rd, Zhongzheng District, Taipei City, 100</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">谷墨商旅<br>GoodMore Hotel</a></b></p> 
+                            <p> - Discount & Price: Fluctuating. Rooms arranged by the organizing committee can enjoy a 20% discount off the regular price listed on the official website.</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: No. 147, Section 1, Heping E Rd, Da'an District, Taipei City, 106</p>
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <!-- 2 -->
-                <div class="row" lang="zh">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/KMDrOM">敘美精品旅店<br>Taipei Hotel B7</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：雙人房2500元，四人房3500元</p>
-                        <p> - 相關服務：
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市中正區重慶南路一段111號</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>TEL：+886-2-2383-2088，找張主任，並告知是台大手球隊介紹（恰逢端午假期 因此費用稍高）。附近有路易莎，預約最早7:00，可以送到飯店。</p> -->
-                        <br>
+                    <!-- 3 -->
+                    <div class="row" lang="zh">
+                        <div class="col-lg-4 offset-lg-2">	
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/jlpxnq">艾爾行旅<br>Hej Taipei</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：四人房3514元，依現場價格每晚每房折扣200元</p>
+                            <p> - 相關服務：
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市大安區忠孝東路4段87號7樓</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>告知是台大手球隊介紹，並下訂含6/21-6/25區間即可享有折扣。該區間是端午假期，請團隊及早訂房。</p> -->
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/6822DNaLRZq8kF3c7">富逸旅趣-北車開封館<br>Rich & Free Hotel</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：四人房4514元</p>
+                            <p> - 相關服務：
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市中正區開封街一段41號2樓</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>沒有折扣。</p> -->
+                            <br>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">谷墨商旅<br>GoodMore Hotel</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：浮動。由本籌委會訂房可享官網上價錢八折優惠。</p>
-                        <p> - 相關服務：
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市大安區和平東路一段147號</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>請聯絡吳宗勳先生：b06704057@ntu.edu.tw</p> -->
-                        <br>
+                    <div class="row" lang="en">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://reurl.cc/jlpxnq">艾爾行旅<br>Hej Taipei</a></b></p>  
+                            <p> - Discount & Price: Quad NTD 3514</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: 106, Taipei City, Da’an District, Section 4, Zhongxiao E Rd, No. 87, 7F</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/6822DNaLRZq8kF3c7">富逸旅趣-北車開封館<br>Rich & Free Hotel</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 4514</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, Kaifeng St, No. 41, 2F</p>
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <div class="row" lang="en">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/KMDrOM">敘美精品旅店<br>Taipei Hotel B7</a></b></p> 
-                        <p> - Discount & Price: Double NTD 2500, Quad NTD 3500</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: No. 111, Section 1, Chongqing S Rd, Zhongzheng District, Taipei City, 100</p>
-                        <br>
+                    <!-- 4 -->
+                    <div class="row" lang="zh">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/zgz1WnUmEW1aNVGL9">洛碁大飯店忠孝館<br>Green World Hotel, zhongxiao</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：四人房4200元(早鳥)</p>
+                            <p> - 相關服務：
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市大安區忠孝東路四段180號</p>
+                            <!-- <p><b>備註</b></p>
+                            <p><a target="_blank" href="https://www.gobooking.com.tw/GreenWorld/GWH-TPZX/Package/Search">線上訂房</a></p> -->
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/xu25C1GNiNfAGUdZ7">尚印2館<br>Stay Inn Taipei</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：四人房2781元</p>
+                            <p> - 相關服務：
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市中山區中山北路二段71號8樓</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>沒有折扣。</p> -->
+                            <br>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/4Q83NL">谷墨商旅<br>GoodMore Hotel</a></b></p> 
-                        <p> - Discount & Price: Fluctuating. Rooms arranged by the organizing committee can enjoy a 20% discount off the regular price listed on the official website.</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: No. 147, Section 1, Heping E Rd, Da'an District, Taipei City, 106</p>
-                        <br>
+                    <div class="row" lang="en">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/zgz1WnUmEW1aNVGL9">洛碁大飯店忠孝館<br>Green World Hotel, zhongxiao</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 4200(early bird)</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: No. 180, Section 4, Zhongxiao E Rd, Da’an District, Taipei City, 106</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/xu25C1GNiNfAGUdZ7">尚印2館<br>Stay Inn Taipei</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 2781</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: 10491, Taipei City, Zhongshan District, Section 2, Zhongshan N Rd, No. 71, 8F</p>
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <!-- 3 -->
-                <div class="row" lang="zh">
-                    <div class="col-lg-4 offset-lg-2">	
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/jlpxnq">艾爾行旅<br>Hej Taipei</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：四人房3514元，依現場價格每晚每房折扣200元</p>
-                        <p> - 相關服務：
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市大安區忠孝東路4段87號7樓</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>告知是台大手球隊介紹，並下訂含6/21-6/25區間即可享有折扣。該區間是端午假期，請團隊及早訂房。</p> -->
-                        <br>
+                    <!-- 5 -->
+                    <div class="row" lang="zh">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/iLcAAM4CCjnrap9S8">德立莊酒店<br>Midtown Richardson</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：四人房4113元</p>
+                            <p> - 相關服務：
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市中正區秀山街4號</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>若要合作需確認訂房需求後才會報價。聯絡人趙小姐：eva.chao@citysuites.com.tw</p> -->
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/ZSU2unqQ26wMjeRXA">台北凱撒大飯店<br>Caesar Park Taipei</a></b></p> 
+                            <!-- <br>
+                            <p><b>資訊</b></p> -->
+                            <p> - 折扣價格：雙人房3,800+10%元，<br>四人房6,100+10%元</p>
+                            <p> - 相關服務：
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
+                            </p>
+                            <p> - 地址：台北市中正區忠孝西路一段38號</p>
+                            <!-- <p><b>備註</b></p>
+                            <p>聯絡業務訂房即有優惠<br>Kitty Hsu (Ms.) / 許秀娟<br>Asst. Sales Manager / 業務副理<br>Tel： +886-2-2311-5150 ext 2424 (09:00~18:00)<br>Fax：+886-2-2312-2180<br>Cell：+886 973-488-567 (09:00~18:00)<br>E-mail：kitty_hsu@caesarpark.com.tw</p> -->
+                            <br>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/6822DNaLRZq8kF3c7">富逸旅趣-北車開封館<br>Rich & Free Hotel</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：四人房4514元</p>
-                        <p> - 相關服務：
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市中正區開封街一段41號2樓</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>沒有折扣。</p> -->
-                        <br>
+                    <div class="row" lang="en">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/iLcAAM4CCjnrap9S8">德立莊酒店<br>Midtown Richardson</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 4113</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: No. 4, Xiushan St, Zhongzheng District, Taipei City, 100</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/ZSU2unqQ26wMjeRXA">台北凱撒大飯店<br>Caesar Park Taipei</a></b></p> 
+                            <p> - Discount & Price: Double NTD 3,800+10%, Quad NTD 6,100+10%</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
+                                <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
+                            </p>
+                            <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, ZhongXiao W Rd, No. 38</p>
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <div class="row" lang="en">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://reurl.cc/jlpxnq">艾爾行旅<br>Hej Taipei</a></b></p>  
-                        <p> - Discount & Price: Quad NTD 3514</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: 106, Taipei City, Da’an District, Section 4, Zhongxiao E Rd, No. 87, 7F</p>
-                        <br>
+                    <!-- 6 -->
+                    <div class="row" lang="zh">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/LbHma4vPAGRwgf83A">路境行旅<br>Finders Hotel</a></b></p> 
+                            <p> - 折扣價格：四人房4179元</p>
+                            <p> - 相關服務：
+                                <i class="fas fa-exclamation me-1" style="color: #e2b11d"></i>早餐供應(供應有限)
+                            </p>
+                            <p> - 地址：台北市中正區重慶南路一段86號</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/MeoUmk2bwDz2pTGZ8">美亞商旅<br>Mayer Inn</a></b></p> 
+                            <p> - 折扣價格：四人房3240元</p>
+                            <p> - 相關服務：
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應
+                            </p>
+                            <p> - 地址：台北市中正區忠孝西路一段50號5F</p>
+                            <br>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/6822DNaLRZq8kF3c7">富逸旅趣-北車開封館<br>Rich & Free Hotel</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 4514</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, Kaifeng St, No. 41, 2F</p>
-                        <br>
+                    <div class="row" lang="en">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/LbHma4vPAGRwgf83A">路境行旅<br>Finders Hotel</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 4179</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fas fa-exclamation me-1" style="color: #e2b11d"></i>Breakfast (limited supply)
+                            </p>
+                            <p> - Address: No. 86, Section 1, Chongqing S Rd, Zhongzheng District, Taipei City, 100</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/MeoUmk2bwDz2pTGZ8">美亞商旅<br>Mayer Inn</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 3240</p>
+                            <p> - Service:&nbsp&nbsp
+                                <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast
+                            </p>
+                            <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, ZhongXiao W Rd, No. 50, 5F</p>
+                            <br>
+                        </div>
                     </div>
-                </div>
-                <!-- 4 -->
-                <div class="row" lang="zh">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/zgz1WnUmEW1aNVGL9">洛碁大飯店忠孝館<br>Green World Hotel, zhongxiao</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：四人房4200元(早鳥)</p>
-                        <p> - 相關服務：
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市大安區忠孝東路四段180號</p>
-                        <!-- <p><b>備註</b></p>
-                        <p><a target="_blank" href="https://www.gobooking.com.tw/GreenWorld/GWH-TPZX/Package/Search">線上訂房</a></p> -->
-                        <br>
+                    <!-- 7 -->
+                    <div class="row" lang="zh">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/9C6w7GHszLQ6waDu6">丰居旅店北車館<br>Via Hotel Taipei Station	</a></b></p> 
+                            <p> - 折扣價格：四人房4880元</p>
+                            <p> - 地址：台北市中正區重慶南路一段60號</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/CkoW1XaZGQn9SfgX6">新驛旅店 北車一館<br>CityInn Hotel Taipei Station One</a></b></p> 
+                            <p> - 折扣價格：四人房4724元</p>
+                            <p> - 地址：台北市中正區懷寧街7號</p>
+                            <br>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/xu25C1GNiNfAGUdZ7">尚印2館<br>Stay Inn Taipei</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：四人房2781元</p>
-                        <p> - 相關服務：
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市中山區中山北路二段71號8樓</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>沒有折扣。</p> -->
-                        <br>
-                    </div>
-                </div>
-                <div class="row" lang="en">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/zgz1WnUmEW1aNVGL9">洛碁大飯店忠孝館<br>Green World Hotel, zhongxiao</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 4200(early bird)</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: No. 180, Section 4, Zhongxiao E Rd, Da’an District, Taipei City, 106</p>
-                        <br>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/xu25C1GNiNfAGUdZ7">尚印2館<br>Stay Inn Taipei</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 2781</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: 10491, Taipei City, Zhongshan District, Section 2, Zhongshan N Rd, No. 71, 8F</p>
-                        <br>
-                    </div>
-                </div>
-                <!-- 5 -->
-                <div class="row" lang="zh">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/iLcAAM4CCjnrap9S8">德立莊酒店<br>Midtown Richardson</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：四人房4113元</p>
-                        <p> - 相關服務：
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市中正區秀山街4號</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>若要合作需確認訂房需求後才會報價。聯絡人趙小姐：eva.chao@citysuites.com.tw</p> -->
-                        <br>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/ZSU2unqQ26wMjeRXA">台北凱撒大飯店<br>Caesar Park Taipei</a></b></p> 
-                        <!-- <br>
-                        <p><b>資訊</b></p> -->
-                        <p> - 折扣價格：雙人房3,800+10%元，<br>四人房6,100+10%元</p>
-                        <p> - 相關服務：
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>早餐供應、
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>隔日清潔
-                        </p>
-                        <p> - 地址：台北市中正區忠孝西路一段38號</p>
-                        <!-- <p><b>備註</b></p>
-                        <p>聯絡業務訂房即有優惠<br>Kitty Hsu (Ms.) / 許秀娟<br>Asst. Sales Manager / 業務副理<br>Tel： +886-2-2311-5150 ext 2424 (09:00~18:00)<br>Fax：+886-2-2312-2180<br>Cell：+886 973-488-567 (09:00~18:00)<br>E-mail：kitty_hsu@caesarpark.com.tw</p> -->
-                        <br>
-                    </div>
-                </div>
-                <div class="row" lang="en">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/iLcAAM4CCjnrap9S8">德立莊酒店<br>Midtown Richardson</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 4113</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: No. 4, Xiushan St, Zhongzheng District, Taipei City, 100</p>
-                        <br>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/ZSU2unqQ26wMjeRXA">台北凱撒大飯店<br>Caesar Park Taipei</a></b></p> 
-                        <p> - Discount & Price: Double NTD 3,800+10%, Quad NTD 6,100+10%</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Breakfast,&nbsp
-                            <i class="fa-solid fa-check me-1" style="color: var(--bs-success)"></i>Room cleaning
-                        </p>
-                        <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, ZhongXiao W Rd, No. 38</p>
-                        <br>
-                    </div>
-                </div>
-                <!-- 6 -->
-                <div class="row" lang="zh">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/LbHma4vPAGRwgf83A">路境行旅<br>Finders Hotel</a></b></p> 
-                        <p> - 折扣價格：四人房4179元</p>
-                        <p> - 相關服務：
-                            <i class="fas fa-exclamation me-1" style="color: #e2b11d"></i>早餐供應(供應有限)
-                        </p>
-                        <p> - 地址：台北市中正區重慶南路一段86號</p>
-                        <br>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/MeoUmk2bwDz2pTGZ8">美亞商旅<br>Mayer Inn</a></b></p> 
-                        <p> - 折扣價格：四人房3240元</p>
-                        <p> - 相關服務：
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>早餐供應
-                        </p>
-                        <p> - 地址：台北市中正區忠孝西路一段50號5F</p>
-                        <br>
-                    </div>
-                </div>
-                <div class="row" lang="en">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/LbHma4vPAGRwgf83A">路境行旅<br>Finders Hotel</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 4179</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fas fa-exclamation me-1" style="color: #e2b11d"></i>Breakfast (limited supply)
-                        </p>
-                        <p> - Address: No. 86, Section 1, Chongqing S Rd, Zhongzheng District, Taipei City, 100</p>
-                        <br>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/MeoUmk2bwDz2pTGZ8">美亞商旅<br>Mayer Inn</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 3240</p>
-                        <p> - Service:&nbsp&nbsp
-                            <i class="fas fa-times me-1" style="color: var(--bs-danger)"></i>Breakfast
-                        </p>
-                        <p> - Address: 100, Taipei City, Zhongzheng District, Section 1, ZhongXiao W Rd, No. 50, 5F</p>
-                        <br>
-                    </div>
-                </div>
-                <!-- 7 -->
-                <div class="row" lang="zh">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/9C6w7GHszLQ6waDu6">丰居旅店北車館<br>Via Hotel Taipei Station	</a></b></p> 
-                        <p> - 折扣價格：四人房4880元</p>
-                        <p> - 地址：台北市中正區重慶南路一段60號</p>
-                        <br>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/CkoW1XaZGQn9SfgX6">新驛旅店 北車一館<br>CityInn Hotel Taipei Station One</a></b></p> 
-                        <p> - 折扣價格：四人房4724元</p>
-                        <p> - 地址：台北市中正區懷寧街7號</p>
-                        <br>
-                    </div>
-                </div>
-                <div class="row" lang="en">
-                    <div class="col-lg-4 offset-lg-2">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/9C6w7GHszLQ6waDu6">丰居旅店北車館<br>Via Hotel Taipei Station	</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 4880</p>
-                        <p> - Address: No. 60, Section 1, Chongqing S Rd, Zhongzheng District, Taipei City, 100</p>
-                        <br>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <p><b><a target="_blank" href="https://goo.gl/maps/CkoW1XaZGQn9SfgX6">新驛旅店 北車一館<br>CityInn Hotel Taipei Station One</a></b></p> 
-                        <p> - Discount & Price: Quad NTD 4724</p>
-                        <p> - Address: No. 7, Huaining St, Zhongzheng District, Taipei City, 100</p>
-                        <br>
+                    <div class="row" lang="en">
+                        <div class="col-lg-4 offset-lg-2">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/9C6w7GHszLQ6waDu6">丰居旅店北車館<br>Via Hotel Taipei Station	</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 4880</p>
+                            <p> - Address: No. 60, Section 1, Chongqing S Rd, Zhongzheng District, Taipei City, 100</p>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <br>
+                            <p><b><a target="_blank" href="https://goo.gl/maps/CkoW1XaZGQn9SfgX6">新驛旅店 北車一館<br>CityInn Hotel Taipei Station One</a></b></p> 
+                            <p> - Discount & Price: Quad NTD 4724</p>
+                            <p> - Address: No. 7, Huaining St, Zhongzheng District, Taipei City, 100</p>
+                            <br>
+                        </div>
                     </div>
                 </div>
             
