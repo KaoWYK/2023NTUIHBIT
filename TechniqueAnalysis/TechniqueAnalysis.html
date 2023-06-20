@@ -39,45 +39,42 @@
                 </div>
             </div>
         </nav> -->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">2023 NTUIHBIT<br>21~25. June</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <button class="btn btn-secondary py-3 px-0 px-lg-3 rounded" type="button" onclick="toggleLanguage()">
-                                <div lang="zh"><b>中 / <font style="opacity:30%">Eng</font></b></div>
-                                <div lang="en"><b><font style="opacity:30%">中</font> / Eng</b></div>
-                            </button>
+                <a class="navbar-brand" href="../index.html">2023 NTUIHBIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#">Link</a></li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">選擇日期</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="filterSchedule('day1')">第一天 (6/21)</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="filterSchedule('day2')">第二天 (6/22)</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="filterSchedule('day3')">第三天 (6/23)</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="filterSchedule('day4')">第四天 (6/24)</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="filterSchedule('day5')">第五天 (6/25)</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#" onclick="filterSchedule('all')">All</a></li>
+                            </ul>
                         </li>
-                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">關於我們<br>About Us</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#news">最新消息<br>News</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#game">賽事  Games<br>& Schedules</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">周邊商品<br>Goods</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#life">臺北生活<br>Taipei Life</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">聯絡我們<br>Contact Us</a></li> -->
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="bg-header text-white text-center">
+        <header class="masterhead bg-header text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- 不知道怎麼用但這樣是好的 -->
-                <h2>2023臺灣大學國際手球邀請賽比賽技術紀錄與分析</h2>
+                <h2 class="text-center text-uppercase mt-4 mb-3">臺灣大學國際手球邀請賽比賽技術紀錄與分析</h2>
+                <h4 class="text-center text-uppercase mb-4">Technique Analysis</h4>
             </div>
         </header>
         <!-- Page content-->
         <section class="page-section mb-0">
             <div class="container">
-                <div class="text-center mt-4">
-                    <h2 class="masthead-heading mb-4">2023臺灣大學國際手球邀請賽比賽技術紀錄與分析</h2>
-                </div>
-                <div class="text-center mt-4">
+                <div class="text-center schedule-div" id="day1">
                     <!-- Day 1 -->
                     <table>
                         <thead>
@@ -217,7 +214,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="text-center mt-4">
+                <div class="text-center schedule-div" id="day2">
                     <!-- Day 2 -->
                     <table>
                         <thead>
@@ -525,7 +522,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="text-center mt-4">
+                <div class="text-center schedule-div" id="day3">
                     <!-- Day 3 -->
                     <table>
                         <thead>
@@ -898,7 +895,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="text-center mt-4">
+                <div class="text-center schedule-div" id="day4">
                     <!-- Day 4 -->
                     <table>
                         <thead>
@@ -1245,7 +1242,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="text-center mt-4">
+                <div class="text-center schedule-div" id="day5">
                     <!-- Day 5 -->
                     <table>
                         <thead>
@@ -1264,281 +1261,279 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <table>
-                                <tr>
-                                    <td>84 </td>
-                                    <td>8:30</td>
-                                    <td>甲</td>
-                                    <td>校友男</td>
-                                    <td>7.8名</td>
-                                    <td>70敗</td>
-                                    <td>71敗 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>85 </td>
-                                    <td>8:30</td>
-                                    <td>乙</td>
-                                    <td>校友男</td>
-                                    <td>9.10名</td>
-                                    <td>68勝</td>
-                                    <td>69勝 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>86 </td>
-                                    <td>8:30</td>
-                                    <td>丙</td>
-                                    <td>校友男</td>
-                                    <td>11,12名</td>
-                                    <td>68敗</td>
-                                    <td>69敗 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>87 </td>
-                                    <td>9:30</td>
-                                    <td>甲</td>
-                                    <td>O35</td>
-                                    <td>循環決賽</td>
-                                    <td>勇毅手球(O35)</td>
-                                    <td>臺大 NTU(O35) </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>88 </td>
-                                    <td>9:30</td>
-                                    <td>乙</td>
-                                    <td>大學男</td>
-                                    <td>7.8.9名</td>
-                                    <td>A4</td>
-                                    <td>B4 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>89 </td>
-                                    <td>9:30</td>
-                                    <td>丙</td>
-                                    <td>大學男</td>
-                                    <td>5.6名</td>
-                                    <td>A3</td>
-                                    <td>B3 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>90 </td>
-                                    <td>10:30</td>
-                                    <td>甲</td>
-                                    <td>校友女</td>
-                                    <td>冠亞</td>
-                                    <td>A1</td>
-                                    <td>B1 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>91 </td>
-                                    <td>10:45</td>
-                                    <td>乙</td>
-                                    <td>校友女</td>
-                                    <td>季殿</td>
-                                    <td>A2</td>
-                                    <td>B2 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>92 </td>
-                                    <td>10:45</td>
-                                    <td>丙</td>
-                                    <td>校友女</td>
-                                    <td>5,6,7名</td>
-                                    <td>A4</td>
-                                    <td>B3 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>93 </td>
-                                    <td>11:30</td>
-                                    <td>甲</td>
-                                    <td>校友男</td>
-                                    <td>冠亞</td>
-                                    <td>72勝</td>
-                                    <td>73勝 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>94 </td>
-                                    <td>11:45</td>
-                                    <td>乙</td>
-                                    <td>校友男</td>
-                                    <td>季殿</td>
-                                    <td>72敗</td>
-                                    <td>73敗 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>95 </td>
-                                    <td>11:45</td>
-                                    <td>丙</td>
-                                    <td>校友男</td>
-                                    <td>5,6名</td>
-                                    <td>70勝</td>
-                                    <td>71勝 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>96 </td>
-                                    <td>12:30</td>
-                                    <td>甲</td>
-                                    <td>O45</td>
-                                    <td>循環決賽</td>
-                                    <td>臺大 NTU</td>
-                                    <td>SCAA CLASSIC </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>97 </td>
-                                    <td>12:45</td>
-                                    <td>乙</td>
-                                    <td>O45</td>
-                                    <td>循環決賽</td>
-                                    <td>香港手聯</td>
-                                    <td>成大  NCKU </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>98 </td>
-                                    <td>12:45</td>
-                                    <td>丙</td>
-                                    <td>O45</td>
-                                    <td>循環決賽</td>
-                                    <td>逢甲 FCU</td>
-                                    <td>政大 NCCU </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>99 </td>
-                                    <td>13:25</td>
-                                    <td>甲</td>
-                                    <td>大學女</td>
-                                    <td>冠亞</td>
-                                    <td>77勝</td>
-                                    <td>78勝 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>100 </td>
-                                    <td>13:40</td>
-                                    <td>乙</td>
-                                    <td>大學女</td>
-                                    <td>季殿</td>
-                                    <td>77敗</td>
-                                    <td>78敗 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>101 </td>
-                                    <td>13:40</td>
-                                    <td>丙</td>
-                                    <td>大學女</td>
-                                    <td>5,6,7名</td>
-                                    <td>A4</td>
-                                    <td>B3 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>102 </td>
-                                    <td>14:40</td>
-                                    <td>甲</td>
-                                    <td>大學男</td>
-                                    <td>冠亞</td>
-                                    <td>A1</td>
-                                    <td>B1 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>103 </td>
-                                    <td>14:55</td>
-                                    <td>乙</td>
-                                    <td>大學男</td>
-                                    <td>季殿</td>
-                                    <td>A2</td>
-                                    <td>B2 </td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                                <tr>
-                                    <td>104</td>
-                                    <td>14:55</td>
-                                    <td>丙</td>
-                                    <td>大學男</td>
-                                    <td>7.8.9名</td>
-                                    <td>A4</td>
-                                    <td>B5</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td><a href="">技術分析(TBD)</a></td>
-                                    <td><a href="">得分流程(TBD)</a></td>
-                                </tr>
-                            </table>
+                            <tr>
+                                <td>84 </td>
+                                <td>8:30</td>
+                                <td>甲</td>
+                                <td>校友男</td>
+                                <td>7.8名</td>
+                                <td>70敗</td>
+                                <td>71敗 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>85 </td>
+                                <td>8:30</td>
+                                <td>乙</td>
+                                <td>校友男</td>
+                                <td>9.10名</td>
+                                <td>68勝</td>
+                                <td>69勝 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>86 </td>
+                                <td>8:30</td>
+                                <td>丙</td>
+                                <td>校友男</td>
+                                <td>11,12名</td>
+                                <td>68敗</td>
+                                <td>69敗 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>87 </td>
+                                <td>9:30</td>
+                                <td>甲</td>
+                                <td>O35</td>
+                                <td>循環決賽</td>
+                                <td>勇毅手球(O35)</td>
+                                <td>臺大 NTU(O35) </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>88 </td>
+                                <td>9:30</td>
+                                <td>乙</td>
+                                <td>大學男</td>
+                                <td>7.8.9名</td>
+                                <td>A4</td>
+                                <td>B4 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>89 </td>
+                                <td>9:30</td>
+                                <td>丙</td>
+                                <td>大學男</td>
+                                <td>5.6名</td>
+                                <td>A3</td>
+                                <td>B3 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>90 </td>
+                                <td>10:30</td>
+                                <td>甲</td>
+                                <td>校友女</td>
+                                <td>冠亞</td>
+                                <td>A1</td>
+                                <td>B1 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>91 </td>
+                                <td>10:45</td>
+                                <td>乙</td>
+                                <td>校友女</td>
+                                <td>季殿</td>
+                                <td>A2</td>
+                                <td>B2 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>92 </td>
+                                <td>10:45</td>
+                                <td>丙</td>
+                                <td>校友女</td>
+                                <td>5,6,7名</td>
+                                <td>A4</td>
+                                <td>B3 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>93 </td>
+                                <td>11:30</td>
+                                <td>甲</td>
+                                <td>校友男</td>
+                                <td>冠亞</td>
+                                <td>72勝</td>
+                                <td>73勝 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>94 </td>
+                                <td>11:45</td>
+                                <td>乙</td>
+                                <td>校友男</td>
+                                <td>季殿</td>
+                                <td>72敗</td>
+                                <td>73敗 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>95 </td>
+                                <td>11:45</td>
+                                <td>丙</td>
+                                <td>校友男</td>
+                                <td>5,6名</td>
+                                <td>70勝</td>
+                                <td>71勝 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>96 </td>
+                                <td>12:30</td>
+                                <td>甲</td>
+                                <td>O45</td>
+                                <td>循環決賽</td>
+                                <td>臺大 NTU</td>
+                                <td>SCAA CLASSIC </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>97 </td>
+                                <td>12:45</td>
+                                <td>乙</td>
+                                <td>O45</td>
+                                <td>循環決賽</td>
+                                <td>香港手聯</td>
+                                <td>成大  NCKU </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>98 </td>
+                                <td>12:45</td>
+                                <td>丙</td>
+                                <td>O45</td>
+                                <td>循環決賽</td>
+                                <td>逢甲 FCU</td>
+                                <td>政大 NCCU </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>99 </td>
+                                <td>13:25</td>
+                                <td>甲</td>
+                                <td>大學女</td>
+                                <td>冠亞</td>
+                                <td>77勝</td>
+                                <td>78勝 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>100 </td>
+                                <td>13:40</td>
+                                <td>乙</td>
+                                <td>大學女</td>
+                                <td>季殿</td>
+                                <td>77敗</td>
+                                <td>78敗 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>101 </td>
+                                <td>13:40</td>
+                                <td>丙</td>
+                                <td>大學女</td>
+                                <td>5,6,7名</td>
+                                <td>A4</td>
+                                <td>B3 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>102 </td>
+                                <td>14:40</td>
+                                <td>甲</td>
+                                <td>大學男</td>
+                                <td>冠亞</td>
+                                <td>A1</td>
+                                <td>B1 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>103 </td>
+                                <td>14:55</td>
+                                <td>乙</td>
+                                <td>大學男</td>
+                                <td>季殿</td>
+                                <td>A2</td>
+                                <td>B2 </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
+                            <tr>
+                                <td>104</td>
+                                <td>14:55</td>
+                                <td>丙</td>
+                                <td>大學男</td>
+                                <td>7.8.9名</td>
+                                <td>A4</td>
+                                <td>B5</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="">技術分析(TBD)</a></td>
+                                <td><a href="">得分流程(TBD)</a></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -1548,10 +1543,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="../js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

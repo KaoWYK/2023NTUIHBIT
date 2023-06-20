@@ -53,6 +53,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+/* 切換語言 */
 var curLang = "zh"
 window.onload = function init() {
     var enElements = document.querySelectorAll('[lang="en"]');
@@ -71,3 +72,24 @@ function toggleLanguage() {
     }
     curLang = (curLang == 'zh') ? 'en' : 'zh'
 };
+
+/* 技術分析：切換日期 */
+function filterSchedule(selectedValue) {
+    // 隱藏所有的賽程區塊
+    var scheduleDivs = document.getElementsByClassName("schedule-div");
+    for (var i = 0; i < scheduleDivs.length; i++) {
+        scheduleDivs[i].style.display = "none";
+    }
+
+    // 顯示符合所選日期的賽程區塊
+    if (selectedValue === "all") {
+        for (var i = 0; i < scheduleDivs.length; i++) {
+            scheduleDivs[i].style.display = "block";
+        }
+    } else {
+        var selectedDiv = document.getElementById(selectedValue);
+        if (selectedDiv) {
+            selectedDiv.style.display = "block";
+        }
+    }
+}
