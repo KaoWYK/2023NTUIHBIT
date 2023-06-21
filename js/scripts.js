@@ -93,3 +93,34 @@ function filterSchedule(selectedValue) {
         }
     }
 }
+
+function filterByGroup(selectedGroup) {
+    var scheduleRows = document.querySelectorAll(".schedule-div tbody tr");
+
+    for (var i = 0; i < scheduleRows.length; i++) {
+        var row = scheduleRows[i];
+        var groupCell = row.cells[3].innerText;
+
+        if (selectedGroup === "all" || groupCell === selectedGroup) {
+            row.style.display = "table-row";
+        } else {
+            row.style.display = "none";
+        }
+    }
+}
+
+function filterByTeam(selectedTeam) {
+    var scheduleRows = document.querySelectorAll(".schedule-div tbody tr");
+
+    for (var i = 0; i < scheduleRows.length; i++) {
+        var row = scheduleRows[i];
+        var teamCell1 = row.cells[5].innerText;
+        var teamCell2 = row.cells[6].innerText;
+
+        if (selectedTeam === "all" || teamCell1 === selectedTeam || teamCell2 === selectedTeam) {
+            row.style.display = "table-row";
+        } else {
+            row.style.display = "none";
+        }
+    }
+}
