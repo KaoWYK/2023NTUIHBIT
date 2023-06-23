@@ -17,6 +17,15 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0GFLRHKDY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B0GFLRHKDY');
+    </script>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -970,6 +979,12 @@
                         <h4 class="text-uppercase mb-4">Sponsors</h4>
                         <p class="lead mb-0 text-center">
                             <img class="img-fluid mb-5" src="assets/img/Sponsors/Final.png">
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="text-uppercase mb-4">Viewer Number</h4>
+                        <p class="lead mb-0 text-center text-white">
+                            <span id="visitorCount"></span>
                         </p>
                     </div>
                 </div>
