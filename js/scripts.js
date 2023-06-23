@@ -125,21 +125,21 @@ function filterByGroup(selectedGroup) {
 //     }
 // }
 
-gtag('event', 'page_view');
-gtag('event', 'visitors', {
-    event_category: 'engagement',
-    event_label: 'visitor_count',
-    value: 1
-});
+// gtag('event', 'page_view');
+// gtag('event', 'visitors', {
+//     event_category: 'engagement',
+//     event_label: 'visitor_count',
+//     value: 1
+// });
 
-// 從Google Analytics Reporting API獲取瀏覽人數
-gtag('config', 'YOUR_ANALYTICS_TRACKING_ID', {
-    'custom_map': {'dimension1': 'visitor_count'}
-});
+// // 從Google Analytics Reporting API獲取瀏覽人數
+// gtag('config', 'G-B0GFLRHKDY', {
+//     'custom_map': {'dimension1': 'visitor_count'}
+// });
 
-gtag('event', 'retrieve_visitor_count', {
-    'event_callback': function() {
-        var visitorCount = gtag('get', 'visitor_count');
-        document.getElementById('visitorCount').textContent = visitorCount;
-    }
-});
+// gtag('event', 'retrieve_visitor_count', {
+//     'event_callback': function() {
+//         var visitorCount = gtag('get', 'visitor_count');
+//         document.getElementById('visitorCount').textContent = visitorCount;
+//     }
+// });
